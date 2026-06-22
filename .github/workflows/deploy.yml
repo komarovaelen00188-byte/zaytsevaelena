@@ -42,5 +42,5 @@ jobs:
 
       - name: Healthcheck
         run: |
-          sleep 10
-          curl --fail https://zaytsevaelena.ru || exit 1
+          sleep 15
+          curl --fail http://zaytsevaelena.ru || exit 1
