@@ -7,7 +7,7 @@ set -e
 
 DOMAIN=${1:-"zaytsevaelena.ru"}
 APP_DIR="/opt/zaytsevaelena"
-REPO_URL="https://github.com/YOUR_USERNAME/zaytsevaelena.git"  # ← заменить
+REPO_URL="https://github.com/komarovaelen00188-byte/zaytsevaelena.git"
 
 echo "=== Обновление системы ==="
 apt-get update && apt-get upgrade -y
