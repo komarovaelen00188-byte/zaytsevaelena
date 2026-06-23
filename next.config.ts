@@ -1,8 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: "standalone",
-  pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
+pageExtensions: ["js", "jsx", "ts", "tsx", "md", "mdx"],
   images: {
     formats: ["image/avif", "image/webp"],
   },
