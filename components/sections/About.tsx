@@ -3,38 +3,35 @@ export function About() {
     <section className="py-20 md:py-28">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
-
-          {/* Левая колонка — текст */}
           <div className="space-y-6">
-            <h2 className="text-3xl sm:text-4xl font-bold tracking-tight leading-tight">
-              Привет, я Елена.{" "}
-              <span className="text-primary">Маркетолог</span>
+            <h2 className="text-2xl sm:text-2xl md:text-3xl font-bold tracking-tight leading-tight">
+              Передай разработку прототипа контент-маркетологу
             </h2>
 
             <div className="space-y-4 text-muted-foreground text-lg leading-relaxed">
               <p>
-                600+ реализованных проектов в твёрдых нишах: строительство,
-                логистика, производство, инжиниринг, ремонт, поставки,
-                проектирование, медицина, консалтинг.
+                Елена Зайцева, маркетолог, контент-маркетолог, копирайтер.
               </p>
               <p>
-                Твёрдому бизнесу помогаю сделать понятным, почему клиентам
-                нужно купить у вас.
+                Разрабатываю UX прототипы сайтов: от лендингов до сложных
+                корпоративных порталов. Мои клиенты: 90% - маркетологи,
+                агентства, трафик-специалисты; 10% - бизнес. Реализовано 500+
+                проектов из твёрдых ниш: производство, строительство, ремонт,
+                медицина, поставки, услуги и пр.
               </p>
             </div>
           </div>
 
-          {/* Правая колонка — фото */}
           <div className="relative">
-            <div className="aspect-[4/5] rounded-3xl overflow-hidden bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/20 flex items-center justify-center">
-              <div className="text-center space-y-2 p-8">
-                <div className="text-7xl font-bold text-primary/20">Е</div>
-                <p className="text-sm text-muted-foreground">Фото появится здесь</p>
-              </div>
+            <div className="aspect-[4/5] rounded-3xl overflow-hidden border border-border bg-background flex items-center justify-center shadow-[0_0_0_1px_rgba(0,0,0,0.04)]">
+              <img
+                src="/images/elena_zaytseva_conten_marketig_prototip.jpg"
+                alt="Елена Зайцева"
+                className="w-full h-full object-cover"
+              />
             </div>
-            <div className="absolute -bottom-4 -left-4 w-24 h-24 rounded-2xl bg-primary/10 border border-primary/20 -z-10" />
+            <div className="absolute -bottom-4 -left-4 w-24 h-24 rounded-2xl border border-border bg-secondary/70 -z-10" />
           </div>
-
         </div>
       </div>
     </section>

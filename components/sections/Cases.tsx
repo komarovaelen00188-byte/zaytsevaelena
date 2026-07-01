@@ -22,7 +22,7 @@ export function Cases() {
               className="group flex flex-col rounded-2xl border border-border bg-card overflow-hidden hover:border-primary/30 transition-all duration-300"
             >
               {/* Изображение */}
-              <div className="aspect-[16/9] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center border-b border-border">
+              <div className="aspect-[16/9] bg-gradient-to-br from-primary/10 to-primary/5 flex items-center justify-center border-b border-border overflow-hidden">
                 {item.image ? (
                   <img
                     src={item.image}

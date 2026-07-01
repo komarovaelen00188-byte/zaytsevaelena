@@ -22,7 +22,7 @@ export function Testimonials() {
                 {Array.from({ length: item.rating }).map((_, i) => (
                   <Star
                     key={i}
-                    className="w-4 h-4 fill-primary text-primary"
+                    className="w-4 h-4 fill-foreground text-foreground"
                   />
                 ))}
               </div>
@@ -34,7 +34,7 @@ export function Testimonials() {
 
               {/* Автор */}
               <div className="flex items-center gap-3">
-                <div className="w-9 h-9 rounded-full bg-primary/10 flex items-center justify-center text-primary font-semibold text-sm flex-shrink-0">
+                <div className="w-9 h-9 rounded-full border border-border bg-secondary flex items-center justify-center text-foreground font-semibold text-sm flex-shrink-0">
                   {item.name.charAt(0)}
                 </div>
                 <div>

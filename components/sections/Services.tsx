@@ -31,18 +31,10 @@ export function Services() {
             <Link
               key={service.href}
               href={service.href}
-              className="group flex flex-col rounded-2xl border border-border bg-card overflow-hidden hover:border-primary/40 hover:bg-primary/5 transition-all duration-200"
+              className="group flex items-center justify-between gap-3 rounded-2xl border border-border bg-card px-5 py-4 hover:border-primary/40 hover:bg-primary/5 transition-all duration-200"
             >
-              {/* Фото */}
-              <div className="aspect-[16/9] bg-gradient-to-br from-primary/10 to-primary/5 border-b border-border flex items-center justify-center">
-                <span className="text-xs text-muted-foreground">Фото</span>
-              </div>
-
-              {/* Название */}
-              <div className="flex items-center justify-between px-5 py-4">
-                <span className="font-medium text-sm">{service.label}</span>
-                <span className="text-primary opacity-0 group-hover:opacity-100 transition-opacity text-lg leading-none">→</span>
-              </div>
+              <span className="font-medium text-sm">{service.label}</span>
+              <ArrowRight className="w-4 h-4 text-primary shrink-0 opacity-0 -translate-x-1 group-hover:opacity-100 group-hover:translate-x-0 transition-all" />
             </Link>
           ))}
         </div>

@@ -16,7 +16,7 @@ export function BlogPreview() {
           </div>
           <Link
             href="/blog"
-            className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline flex-shrink-0"
+            className="inline-flex items-center gap-1.5 text-sm font-medium text-foreground hover:underline flex-shrink-0"
           >
             Все статьи
             <ArrowRight className="w-3.5 h-3.5" />
@@ -28,14 +28,14 @@ export function BlogPreview() {
             <Link
               key={post.slug}
               href={`/blog/${post.slug}`}
-              className="group flex flex-col p-6 rounded-2xl border border-border bg-card hover:border-primary/30 hover:bg-primary/5 transition-all duration-300"
+              className="group flex flex-col p-6 rounded-2xl border border-border bg-card hover:border-foreground/20 transition-all duration-300"
             >
               {/* Категории */}
               <div className="flex flex-wrap gap-1.5 mb-4">
                 {post.categories.slice(0, 2).map((cat) => (
                   <span
                     key={cat}
-                    className="px-2 py-0.5 rounded-full bg-primary/10 text-primary text-xs font-medium"
+                    className="px-2 py-0.5 rounded-full border border-border bg-secondary text-foreground/80 text-xs font-medium"
                   >
                     {cat}
                   </span>
@@ -43,7 +43,7 @@ export function BlogPreview() {
               </div>
 
               {/* Заголовок */}
-              <h3 className="font-semibold text-base leading-snug mb-3 group-hover:text-primary transition-colors flex-1">
+              <h3 className="font-semibold text-base leading-snug mb-3 group-hover:text-foreground transition-colors flex-1">
                 {post.title}
               </h3>
 

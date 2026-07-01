@@ -53,7 +53,7 @@ export function Header() {
 
           {/* Логотип */}
           <Link href="/" className="text-lg font-semibold tracking-tight hover:text-primary transition-colors">
-            <span className="text-primary">.</span>
+            <span className="text-foreground">Елена Зайцева</span>
           </Link>
 
           {/* Навигация — десктоп */}
@@ -135,6 +135,12 @@ export function Header() {
 
           {/* Правая часть */}
           <div className="flex items-center gap-2">
+            <a
+              href="tel:+79233551049"
+              className="hidden sm:inline-flex text-sm font-semibold text-foreground hover:text-primary transition-colors mr-1"
+            >
+              +7 (923) 355-10-49
+            </a>
             <ThemeToggle />
             <button
               className="md:hidden w-9 h-9 flex items-center justify-center rounded-lg border border-border"
@@ -198,6 +204,14 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
+
+            <a
+              href="tel:+79233551049"
+              onClick={() => setMobileOpen(false)}
+              className="px-3 py-2.5 rounded-md text-sm font-semibold text-foreground hover:text-primary hover:bg-secondary transition-colors"
+            >
+              +7 (923) 355-10-49
+            </a>
           </nav>
         </div>
       )}

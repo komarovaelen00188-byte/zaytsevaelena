@@ -9,6 +9,11 @@ const footerLinks = [
   { href: "/contacts", label: "Контакты" },
 ];
 
+const POLICY_URL =
+  "https://docs.google.com/document/d/1pvX7WwqXAAQsFYAzDdJ4MeuMnlzOPExCq8Jc5m0zRW4/edit?tab=t.0";
+const CONSENT_URL =
+  "https://docs.google.com/document/d/1SijXHHRPqINp8Tq4dAm_-itk0I3KguLFWvmvRmJ2vRw/edit?tab=t.0";
+
 export function Footer() {
   const year = new Date().getFullYear();
 
@@ -44,9 +49,30 @@ export function Footer() {
           </nav>
         </div>
 
-        <div className="mt-8 pt-8 border-t border-border flex flex-col sm:flex-row justify-between items-center gap-2 text-sm text-muted-foreground">
-          <p>© {year} Елена Зайцева. Все права защищены.</p>
-          <p>Сделано с <span className="text-primary">♥</span></p>
+        <div className="mt-8 pt-8 border-t border-border flex flex-col gap-4 text-sm text-muted-foreground">
+          <div className="space-y-1">
+            <p>Copyright © ИП Зайцева Елена Владимировна {year}</p>
+            <p>ИНН: 246313807242 · ОГРН: 322246800066133</p>
+            <p>Сайт не является публичной офертой</p>
+          </div>
+          <div className="flex flex-wrap gap-x-6 gap-y-2">
+            <a
+              href={POLICY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground transition-colors"
+            >
+              Политика в области обработки ПД
+            </a>
+            <a
+              href={CONSENT_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-foreground transition-colors"
+            >
+              Согласие на обработку
+            </a>
+          </div>
         </div>
       </div>
     </footer>
