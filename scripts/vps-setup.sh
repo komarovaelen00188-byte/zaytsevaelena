@@ -31,13 +31,15 @@ mkdir -p $APP_DIR
 git clone $REPO_URL $APP_DIR
 
 echo "=== Получение SSL-сертификата ==="
+mkdir -p /var/www/certbot
 certbot certonly --standalone \
   -d $DOMAIN -d www.$DOMAIN \
   --non-interactive --agree-tos \
   -m admin@$DOMAIN
 
 echo "=== Настройка авто-обновления сертификата ==="
-(crontab -l 2>/dev/null; echo "0 3 * * * certbot renew --quiet && docker compose -f $APP_DIR/docker-compose.yml restart nginx") | crontab -
+# renew через standalone требует свободный порт 80 — на время продления гасим nginx
+(crontab -l 2>/dev/null; echo "0 3 * * * certbot renew --quiet --pre-hook 'docker compose -f $APP_DIR/docker-compose.yml stop nginx' --post-hook 'docker compose -f $APP_DIR/docker-compose.yml start nginx'") | crontab -
 
 echo "=== Запуск приложения ==="
 cd $APP_DIR
