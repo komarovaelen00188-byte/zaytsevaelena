@@ -41,10 +41,10 @@
   },
   {
     "id": "case-6",
-    "title": "Презентации для бизнеса",
-    "description": "Сделали услугу комплексного технического обслуживания понятной.",
-    "category": "Презентация",
-    "image": "",
-    "slug": "presentation-business"
+    "title": "Прототип сайта для IT-продукта",
+    "description": "Сложный продукт стал понятным.",
+    "category": "Прототип",
+    "image": "/images/prototip_saita_po_dlya_inansovogo_ucheta1.png",
+    "slug": "prototype-it-product"
   }
 ]

@@ -156,9 +156,16 @@ export default async function CasePage({
                   >
                     <img
                       src={img.image}
-                      alt={img.alt ?? item.title}
+                      alt={img.alt ?? img.caption ?? item.title}
                       className="w-full h-auto"
                     />
+                    {img.caption && (
+                      <div className="px-5 py-4 text-center">
+                        <p className="text-sm font-medium text-foreground">
+                          {img.caption}
+                        </p>
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
