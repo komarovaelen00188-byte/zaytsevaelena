@@ -59,22 +59,33 @@ export default async function CasePage({
         <h1 className="text-4xl sm:text-5xl font-bold tracking-tight leading-tight">
           {item.title}
         </h1>
-        <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
-          {item.summary}
-        </p>
+        {item.summary && (
+          <p className="text-lg text-muted-foreground leading-relaxed max-w-2xl">
+            {item.summary}
+          </p>
+        )}
       </div>
 
-      {item.image && (
-        <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
-          <div className="aspect-[16/9] bg-secondary/30">
+      {item.image &&
+        (item.imageContain ? (
+          <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
             <img
               src={item.image}
               alt={item.imageAlt ?? item.title}
-              className="w-full h-full object-cover"
+              className="w-full h-auto"
             />
           </div>
-        </div>
-      )}
+        ) : (
+          <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
+            <div className="aspect-[16/9] bg-secondary/30">
+              <img
+                src={item.image}
+                alt={item.imageAlt ?? item.title}
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+        ))}
 
       {item.facts && item.facts.length > 0 && (
         <div className="grid gap-4 sm:grid-cols-3">
@@ -201,6 +212,23 @@ export default async function CasePage({
           </div>
         ))}
       </div>
+
+      {item.gallery && item.gallery.length > 0 && (
+        <div className="space-y-6">
+          {item.gallery.map((img, i) => (
+            <div
+              key={i}
+              className="overflow-hidden rounded-3xl border border-border bg-card shadow-sm"
+            >
+              <img
+                src={img.image}
+                alt={img.alt ?? item.title}
+                className="w-full h-auto"
+              />
+            </div>
+          ))}
+        </div>
+      )}
 
       {item.prototype && (
         <div className="space-y-4">

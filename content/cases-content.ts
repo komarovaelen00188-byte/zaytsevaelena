@@ -25,11 +25,13 @@ export type CaseContent = {
   summary: string;
   image?: string;
   imageAlt?: string;
+  imageContain?: boolean;
   metaTitle: string;
   metaDescription: string;
   facts?: { label: string; value: string }[];
   beforeAfter?: { before: CaseImage; after: CaseImage };
   sections: CaseSection[];
+  gallery?: { image: string; alt?: string }[];
   prototype?: { heading: string; image?: string; embed?: string; alt?: string };
 };
 
@@ -259,6 +261,64 @@ export const casesContent: Record<string, CaseContent> = {
       image: "/images/otchet_analis_ca_akkmir.png",
       alt: "Отчёт по исследованию целевой аудитории",
     },
+  },
+  "site-cross-marketing": {
+    slug: "site-cross-marketing",
+    category: "Сайт",
+    title:
+      "Разработка сайта для лидера ниши кросс-маркетинга в РФ — Владислав Бермуда",
+    summary: "",
+    image: "/images/stranica_keisa_sait_bermuda1.png",
+    imageAlt: "Сайт Владислава Бермуды — главная страница",
+    imageContain: true,
+    metaTitle:
+      "Кейс: сайт под ключ для лидера кросс-маркетинга (Владислав Бермуда)",
+    metaDescription:
+      "Разработка сайта под ключ для спикера из ТОП-6 по маркетингу в РФ: продукты, книги, преимущества и передача всех исходников команде заказчика.",
+    sections: [
+      {
+        heading: "Что сделали",
+        paragraphs: [
+          "Разработали сайт для спикера из ТОП-6 спикеров по маркетингу в РФ. Разместили продукты: услуги, книги, преимущества и информацию о спикере.",
+        ],
+      },
+      {
+        heading: "Передали все исходники",
+        paragraphs: [
+          "Передали команде спикера все исходники сайта, чтобы она могла самостоятельно:",
+        ],
+        bullets: [
+          "использовать исходник дизайна в Figma для разработки других маркетинговых материалов",
+          "добавлять страницы под новые продукты — например, события",
+          "быстро менять контент: отзывы, продукты, форматы сотрудничества",
+          "работать с формами захвата",
+        ],
+      },
+      {
+        heading: "Проектировали под самостоятельное развитие",
+        paragraphs: [
+          "Сайт изначально проектировался так, чтобы команда заказчика могла без проблем менять его сама. Предусмотрели возможность будущих изменений и лёгкость администрирования.",
+        ],
+      },
+      {
+        heading: "Ход работ",
+        steps: [
+          { title: "Тестовый прототип сайта" },
+          { title: "Дизайн-концепция и дизайн" },
+          { title: "Вёрстка сайта" },
+          { title: "Передача проекта" },
+        ],
+      },
+    ],
+    gallery: [
+      { image: "/images/stranica_keisa_sait_bermuda2.png", alt: "Сайт Владислава Бермуды — блок 2" },
+      { image: "/images/stranica_keisa_sait_bermuda3.png", alt: "Сайт Владислава Бермуды — блок 3" },
+      { image: "/images/stranica_keisa_sait_bermuda4.png", alt: "Сайт Владислава Бермуды — блок 4" },
+      { image: "/images/stranica_keisa_sait_bermuda5.png", alt: "Сайт Владислава Бермуды — блок 5" },
+      { image: "/images/stranica_keisa_sait_bermuda6.png", alt: "Сайт Владислава Бермуды — блок 6" },
+      { image: "/images/stranica_keisa_sait_bermuda7.png", alt: "Сайт Владислава Бермуды — блок 7" },
+      { image: "/images/stranica_keisa_sait_bermuda8.png", alt: "Сайт Владислава Бермуды — блок 8" },
+    ],
   },
 };
 
