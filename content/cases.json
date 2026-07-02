@@ -25,11 +25,11 @@
   },
   {
     "id": "case-4",
-    "title": "Позиционирование для производителя барных станций",
-    "description": "Создали маркетинг, который приносит клиентов уже 3 года.",
-    "category": "Позиционирование",
-    "image": "",
-    "slug": "positioning-bar-stations"
+    "title": "Разработка каталога продукции",
+    "description": "Маркетинг для производителя газовых счётчиков и ВКТМ.",
+    "category": "Каталог",
+    "image": "/images/keis_gasovii_schetchik_katalog_1.png",
+    "slug": "catalog-gas-meters"
   },
   {
     "id": "case-5",

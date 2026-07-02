@@ -140,11 +140,29 @@ export default async function CasePage({
       )}
 
       <div className="space-y-12">
-        {item.sections.map((section) => (
-          <div key={section.heading} className="space-y-4">
-            <h2 className="text-2xl font-bold tracking-tight">
-              {section.heading}
-            </h2>
+        {item.sections.map((section, sectionIndex) => (
+          <div key={sectionIndex} className="space-y-4">
+            {section.heading && (
+              <h2 className="text-2xl font-bold tracking-tight">
+                {section.heading}
+              </h2>
+            )}
+            {section.images && section.images.length > 0 && (
+              <div className="space-y-6">
+                {section.images.map((img, i) => (
+                  <div
+                    key={i}
+                    className="overflow-hidden rounded-3xl border border-border bg-card shadow-sm"
+                  >
+                    <img
+                      src={img.image}
+                      alt={img.alt ?? item.title}
+                      className="w-full h-auto"
+                    />
+                  </div>
+                ))}
+              </div>
+            )}
             {section.paragraphs?.map((paragraph, i) => (
               <p
                 key={i}
@@ -190,6 +208,14 @@ export default async function CasePage({
                         ))}
                       </ul>
                     )}
+                    {step.note?.map((paragraph, i) => (
+                      <p
+                        key={i}
+                        className="text-base text-muted-foreground leading-relaxed"
+                      >
+                        {paragraph}
+                      </p>
+                    ))}
                     {step.value && step.value.length > 0 && (
                       <div className="rounded-2xl bg-primary/5 border border-primary/10 p-4 space-y-2">
                         <p className="text-xs uppercase tracking-[0.18em] text-primary font-medium">
