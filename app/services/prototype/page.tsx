@@ -86,11 +86,13 @@ const relatedCases = [
     href: "/cases/prototype-renovation",
     title: "Прототип компании по ремонту квартир",
     result: "Переход из среднего сегмента в премиум",
+    image: "/images/prototip_website_neapol.png",
   },
   {
     href: "/cases/prototype-it-product",
     title: "Прототип сайта для IT-продукта",
     result: "Сложный продукт стал понятным",
+    image: "/images/prototip_saita_po_dlya_inansovogo_ucheta1.png",
   },
 ];
 
@@ -378,17 +380,26 @@ export default function PrototypePage() {
               <Link
                 key={c.href}
                 href={c.href}
-                className="group flex flex-col p-6 rounded-2xl border border-border bg-card hover:border-primary/30 hover:bg-primary/5 transition-all"
+                className="group flex flex-col rounded-2xl border border-border bg-card overflow-hidden hover:border-primary/30 hover:bg-primary/5 transition-all"
               >
-                <h3 className="font-semibold text-base mb-2 group-hover:text-primary transition-colors">
-                  {c.title}
-                </h3>
-                <p className="text-sm text-muted-foreground leading-relaxed flex-1">
-                  {c.result}
-                </p>
-                <span className="text-primary text-sm mt-3 inline-flex items-center gap-1">
-                  Смотреть кейс <ArrowRight className="w-3.5 h-3.5" />
-                </span>
+                <div className="aspect-[16/9] bg-gradient-to-br from-primary/10 to-primary/5 border-b border-border overflow-hidden">
+                  <img
+                    src={c.image}
+                    alt={c.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="flex flex-col flex-1 p-6">
+                  <h3 className="font-semibold text-base mb-2 group-hover:text-primary transition-colors">
+                    {c.title}
+                  </h3>
+                  <p className="text-sm text-muted-foreground leading-relaxed flex-1">
+                    {c.result}
+                  </p>
+                  <span className="text-primary text-sm mt-3 inline-flex items-center gap-1">
+                    Смотреть кейс <ArrowRight className="w-3.5 h-3.5" />
+                  </span>
+                </div>
               </Link>
             ))}
           </div>
