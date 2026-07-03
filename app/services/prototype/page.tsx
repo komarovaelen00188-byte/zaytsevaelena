@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, ArrowLeft, CheckCircle2, ChevronDown } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Прототип продающего сайта за 3 дня — Елена Зайцева",
+  title: "Прототип продающего сайта за 3 дня",
   description:
     "Разработка прототипа продающего сайта: тексты, структура, оффер, УТП и отстройка. Анализ ЦА и конкурентов, защита прототипа, передача дизайнеру. Опыт 800+ проектов.",
   alternates: {
@@ -364,6 +364,7 @@ export default function PrototypePage() {
                 key={src}
                 src={src}
                 alt="Отзыв о работе над прототипом"
+                loading="lazy"
                 className="w-full h-auto rounded-2xl border border-border mb-4 break-inside-avoid"
               />
             ))}
@@ -386,6 +387,7 @@ export default function PrototypePage() {
                   <img
                     src={c.image}
                     alt={c.title}
+                    loading="lazy"
                     className="w-full h-full object-cover"
                   />
                 </div>

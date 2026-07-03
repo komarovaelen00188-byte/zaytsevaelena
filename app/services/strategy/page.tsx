@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, ArrowLeft, CheckCircle2, Quote } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Разработка маркетингового плана — Елена Зайцева",
+  title: "Разработка маркетингового плана",
   description:
     "Разработка маркетингового плана под бизнес: точки роста, слабые места, инструменты и пошаговая последовательность действий от точки А к точке Б. План на 2–3 года вперёд.",
   alternates: {

@@ -9,7 +9,7 @@ import { CTA } from "@/components/sections/CTA";
 import { BlogPreview } from "@/components/sections/BlogPreview";
 
 export const metadata: Metadata = {
-  title: "Елена Зайцева — Маркетолог",
+  title: { absolute: "Елена Зайцева — Маркетолог" },
   description:
     "Маркетолог: позиционирование, стратегии, прототипы лендингов, исследования ЦА и контент-стратегии.",
   alternates: {

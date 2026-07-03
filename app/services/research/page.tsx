@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, ArrowLeft, CheckCircle2, ChevronDown } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Исследование ЦА через опросы клиентской базы (кастдев) — Елена Зайцева",
+  title: "Исследование ЦА через опросы клиентской базы (кастдев)",
   description:
     "Исследование целевой аудитории через опросы клиентской базы: почему покупают и почему не покупают. Отчёт с выводами, записи разговоров, точки роста. 900+ проектов.",
   alternates: {
@@ -240,6 +240,7 @@ export default function ResearchPage() {
             <img
               src="/images/zvonki_issledovaniya1.webp"
               alt="Фиксация звонков исследования в Google Docs"
+              loading="lazy"
               className="w-full h-auto"
             />
           </div>

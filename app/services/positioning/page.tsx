@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, ArrowLeft, CheckCircle2, AlertTriangle } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Разработка позиционирования бренда за 1 месяц — Елена Зайцева",
+  title: "Разработка позиционирования бренда за 1 месяц",
   description:
     "Разработка позиционирования бренда: кто вы, чем отличаетесь от конкурентов и почему покупать у вас. Презентация 10 разворотов — основа для сайта, КП и скриптов. 600+ проектов.",
   alternates: {

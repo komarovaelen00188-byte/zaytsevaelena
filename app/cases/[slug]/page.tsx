@@ -42,8 +42,27 @@ export default async function CasePage({
     notFound();
   }
 
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Главная", item: "https://zaytsevaelena.ru" },
+      { "@type": "ListItem", position: 2, name: "Кейсы", item: "https://zaytsevaelena.ru/cases" },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: item.title,
+        item: `https://zaytsevaelena.ru/cases/${item.slug}`,
+      },
+    ],
+  };
+
   return (
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-16 md:py-24 space-y-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }}
+      />
       <Link
         href="/#cases"
         className="inline-flex items-center gap-1.5 text-sm text-muted-foreground hover:text-foreground transition-colors"
@@ -122,6 +141,7 @@ export default async function CasePage({
                     <img
                       src={data.image}
                       alt={data.alt ?? label}
+                      loading="lazy"
                       className="w-full h-full object-cover"
                     />
                   ) : (
@@ -157,6 +177,7 @@ export default async function CasePage({
                     <img
                       src={img.image}
                       alt={img.alt ?? img.caption ?? item.title}
+                      loading="lazy"
                       className="w-full h-auto"
                     />
                     {img.caption && (
@@ -256,6 +277,7 @@ export default async function CasePage({
               <img
                 src={img.image}
                 alt={img.alt ?? item.title}
+                loading="lazy"
                 className="w-full h-auto"
               />
             </div>
@@ -278,6 +300,7 @@ export default async function CasePage({
               <img
                 src={item.prototype.image}
                 alt={item.prototype.alt ?? item.prototype.heading}
+                loading="lazy"
                 className="w-full h-auto"
               />
             ) : null}

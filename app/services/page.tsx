@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowRight, Sparkles, Search, PenTool, Presentation, Compass, MessagesSquare } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Услуги — Елена Зайцева",
+  title: "Услуги",
   description: "Стратегия, позиционирование, исследования ЦА, контент и прототипы лендингов для роста бизнеса.",
   alternates: {
     canonical: "https://zaytsevaelena.ru/services",
