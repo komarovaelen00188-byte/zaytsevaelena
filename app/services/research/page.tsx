@@ -319,11 +319,13 @@ export default function ResearchPage() {
                 ))}
               </ul>
             </div>
-            <div className="aspect-[4/3] rounded-2xl bg-gradient-to-br from-primary/20 to-primary/5 border border-primary/20 flex items-center justify-center">
-              <div className="text-center">
-                <div className="text-5xl font-bold text-primary/20 mb-2">Е</div>
-                <p className="text-xs text-muted-foreground">Фото появится здесь</p>
-              </div>
+            <div className="overflow-hidden rounded-2xl border border-primary/20 aspect-[3/4]">
+              <img
+                src="/images/elena_zaytseva_conten_marketig_prototip.webp"
+                alt="Елена Зайцева — маркетолог"
+                loading="lazy"
+                className="w-full h-full object-cover"
+              />
             </div>
           </div>
         </div>
