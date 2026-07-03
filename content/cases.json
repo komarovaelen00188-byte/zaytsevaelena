@@ -4,7 +4,7 @@
     "title": "Сайт под ключ",
     "description": "Разработка сайта для лидера ниши кросс-маркетинга и коллабораций",
     "category": "Сайт",
-    "image": "/images/stranica_keisa_sait_bermuda8.png",
+    "image": "/images/stranica_keisa_sait_bermuda8.webp",
     "slug": "site-cross-marketing"
   },
   {
@@ -12,7 +12,7 @@
     "title": "Исследование ЦА для сети магазинов",
     "description": "Выяснили, почему потребители покупают и остаются постоянными клиентами, и почему не покупают. 200+ респондентов.",
     "category": "Исследование ЦА",
-    "image": "/images/banner_analiz_akkmir.png",
+    "image": "/images/banner_analiz_akkmir.webp",
     "slug": "research-retail"
   },
   {
@@ -20,7 +20,7 @@
     "title": "Прототип компании по ремонту квартир",
     "description": "Переход из среднего сегмента в премиум начался с ребрендинга.",
     "category": "Прототип",
-    "image": "/images/prototip_website_neapol.png",
+    "image": "/images/prototip_website_neapol.webp",
     "slug": "prototype-renovation"
   },
   {
@@ -28,7 +28,7 @@
     "title": "Разработка каталога продукции",
     "description": "Маркетинг для производителя газовых счётчиков и ВКТМ.",
     "category": "Каталог",
-    "image": "/images/keis_gasovii_schetchik_katalog_1.png",
+    "image": "/images/keis_gasovii_schetchik_katalog_1.webp",
     "slug": "catalog-gas-meters"
   },
   {
@@ -36,7 +36,7 @@
     "title": "Сайт компании ландшафтного дизайна",
     "description": "Инструмент привлечения клиентов.",
     "category": "Сайт",
-    "image": "/images/sait_kompanii_landshaftnogodizainaiozeleneniya_elitnii_sad_3.png",
+    "image": "/images/sait_kompanii_landshaftnogodizainaiozeleneniya_elitnii_sad_3.webp",
     "slug": "site-landscape-design"
   },
   {
@@ -44,7 +44,7 @@
     "title": "Прототип сайта для IT-продукта",
     "description": "Сложный продукт стал понятным.",
     "category": "Прототип",
-    "image": "/images/prototip_saita_po_dlya_inansovogo_ucheta1.png",
+    "image": "/images/prototip_saita_po_dlya_inansovogo_ucheta1.webp",
     "slug": "prototype-it-product"
   }
 ]

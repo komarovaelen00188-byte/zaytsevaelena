@@ -55,12 +55,12 @@ export const casesContent: Record<string, CaseContent> = {
     ],
     beforeAfter: {
       before: {
-        image: "/images/prototip_website_neapol.png",
+        image: "/images/prototip_website_neapol.webp",
         alt: "Прототип сайта компании по ремонту квартир",
         label: "Прототип, полный — ниже на странице",
       },
       after: {
-        image: "/images/website_neapol_.png",
+        image: "/images/website_neapol_.webp",
         alt: "Готовый сайт компании после переупаковки оффера",
       },
     },
@@ -156,7 +156,7 @@ export const casesContent: Record<string, CaseContent> = {
     title: "Опрос покупателей: почему покупают и почему не покупают",
     summary:
       "Телефонный опрос 240 клиентов сети по продаже аккумуляторов и автосервисов за 1,5 месяца. Выяснили, почему покупатели выбирают компанию, остаются постоянными клиентами и почему уходят.",
-    image: "/images/banner_analiz_akkmir.png",
+    image: "/images/banner_analiz_akkmir.webp",
     imageAlt: "Исследование целевой аудитории для сети магазинов",
     metaTitle: "Кейс: исследование ЦА для сети магазинов автотоваров",
     metaDescription:
@@ -260,7 +260,7 @@ export const casesContent: Record<string, CaseContent> = {
     ],
     prototype: {
       heading: "Отчёт по исследованию",
-      image: "/images/otchet_analis_ca_akkmir.png",
+      image: "/images/otchet_analis_ca_akkmir.webp",
       alt: "Отчёт по исследованию целевой аудитории",
     },
   },
@@ -270,7 +270,7 @@ export const casesContent: Record<string, CaseContent> = {
     title:
       "Разработка сайта для лидера ниши кросс-маркетинга в РФ — Владислав Бермуда",
     summary: "",
-    image: "/images/stranica_keisa_sait_bermuda1.png",
+    image: "/images/stranica_keisa_sait_bermuda1.webp",
     imageAlt: "Сайт Владислава Бермуды — главная страница",
     imageContain: true,
     metaTitle:
@@ -313,13 +313,13 @@ export const casesContent: Record<string, CaseContent> = {
       },
     ],
     gallery: [
-      { image: "/images/stranica_keisa_sait_bermuda2.png", alt: "Сайт Владислава Бермуды — блок 2" },
-      { image: "/images/stranica_keisa_sait_bermuda3.png", alt: "Сайт Владислава Бермуды — блок 3" },
-      { image: "/images/stranica_keisa_sait_bermuda4.png", alt: "Сайт Владислава Бермуды — блок 4" },
-      { image: "/images/stranica_keisa_sait_bermuda5.png", alt: "Сайт Владислава Бермуды — блок 5" },
-      { image: "/images/stranica_keisa_sait_bermuda6.png", alt: "Сайт Владислава Бермуды — блок 6" },
-      { image: "/images/stranica_keisa_sait_bermuda7.png", alt: "Сайт Владислава Бермуды — блок 7" },
-      { image: "/images/stranica_keisa_sait_bermuda8.png", alt: "Сайт Владислава Бермуды — блок 8" },
+      { image: "/images/stranica_keisa_sait_bermuda2.webp", alt: "Сайт Владислава Бермуды — блок 2" },
+      { image: "/images/stranica_keisa_sait_bermuda3.webp", alt: "Сайт Владислава Бермуды — блок 3" },
+      { image: "/images/stranica_keisa_sait_bermuda4.webp", alt: "Сайт Владислава Бермуды — блок 4" },
+      { image: "/images/stranica_keisa_sait_bermuda5.webp", alt: "Сайт Владислава Бермуды — блок 5" },
+      { image: "/images/stranica_keisa_sait_bermuda6.webp", alt: "Сайт Владислава Бермуды — блок 6" },
+      { image: "/images/stranica_keisa_sait_bermuda7.webp", alt: "Сайт Владислава Бермуды — блок 7" },
+      { image: "/images/stranica_keisa_sait_bermuda8.webp", alt: "Сайт Владислава Бермуды — блок 8" },
     ],
   },
   "catalog-gas-meters": {
@@ -352,11 +352,11 @@ export const casesContent: Record<string, CaseContent> = {
       {
         images: [
           {
-            image: "/images/keis_gasovii_schetchik_katalog_2.png",
+            image: "/images/keis_gasovii_schetchik_katalog_2.webp",
             alt: "Каталог продукции — разворот",
           },
           {
-            image: "/images/keis_gasovii_schetchik_katalog_3.png",
+            image: "/images/keis_gasovii_schetchik_katalog_3.webp",
             alt: "Каталог продукции — страница",
           },
         ],
@@ -430,7 +430,7 @@ export const casesContent: Record<string, CaseContent> = {
     summary:
       "Редизайн и создание сайта с нуля для компании ландшафтного проектирования, благоустройства и озеленения «Элитный сад» (Красноярск): портфолио, услуги, питомник и система сбора заявок.",
     image:
-      "/images/sait_kompanii_landshaftnogodizainaiozeleneniya_elitnii_sad_1.png",
+      "/images/sait_kompanii_landshaftnogodizainaiozeleneniya_elitnii_sad_1.webp",
     imageAlt: "Сайт компании «Элитный сад» — главная страница",
     imageContain: true,
     metaTitle: "Кейс: сайт для компании ландшафтного дизайна «Элитный сад»",
@@ -589,12 +589,12 @@ export const casesContent: Record<string, CaseContent> = {
     gallery: [
       {
         image:
-          "/images/sait_kompanii_landshaftnogodizainaiozeleneniya_elitnii_sad_2.png",
+          "/images/sait_kompanii_landshaftnogodizainaiozeleneniya_elitnii_sad_2.webp",
         alt: "Сайт «Элитный сад» — внутренние страницы",
       },
       {
         image:
-          "/images/sait_kompanii_landshaftnogodizainaiozeleneniya_elitnii_sad_3.png",
+          "/images/sait_kompanii_landshaftnogodizainaiozeleneniya_elitnii_sad_3.webp",
         alt: "Сайт «Элитный сад» — портфолио и питомник",
       },
     ],
@@ -612,11 +612,11 @@ export const casesContent: Record<string, CaseContent> = {
       {
         images: [
           {
-            image: "/images/prototip_saita_po_dlya_inansovogo_ucheta1.png",
+            image: "/images/prototip_saita_po_dlya_inansovogo_ucheta1.webp",
             caption: "Прототип сайта IT-продукта",
           },
           {
-            image: "/images/prototip_saita_po_dlya_inansovogo_ucheta2.png",
+            image: "/images/prototip_saita_po_dlya_inansovogo_ucheta2.webp",
             caption: "Сайт, сделанный по прототипу",
           },
         ],

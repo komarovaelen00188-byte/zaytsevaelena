@@ -238,7 +238,7 @@ export default function ResearchPage() {
 
           <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
             <img
-              src="/images/zvonki_issledovaniya1.png"
+              src="/images/zvonki_issledovaniya1.webp"
               alt="Фиксация звонков исследования в Google Docs"
               className="w-full h-auto"
             />

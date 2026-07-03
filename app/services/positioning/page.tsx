@@ -187,7 +187,7 @@ export default function PositioningPage() {
         {/* Блок 2 — Изображение */}
         <div className="overflow-hidden rounded-3xl border border-border bg-card shadow-sm">
           <img
-            src="/images/pozicionirovanie_kto.png"
+            src="/images/pozicionirovanie_kto.webp"
             alt="Позиционирование бренда"
             className="w-full h-auto"
           />

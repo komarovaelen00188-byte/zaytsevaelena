@@ -19,11 +19,11 @@ const stats = [
 
 const showcase = [
   {
-    image: "/images/prototip_logistica_atrans1.png",
+    image: "/images/prototip_logistica_atrans1.webp",
     caption: "Прототип сайта логистической компании",
   },
   {
-    image: "/images/prototip_logistica_atrans2.png",
+    image: "/images/prototip_logistica_atrans2.webp",
     caption: "Сайт, разработанный по прототипу",
   },
 ];
@@ -74,11 +74,11 @@ const forAgencies = [
 ];
 
 const reviews = [
-  "/images/otziv_na_prototip1.jpg",
-  "/images/otziv_na_prototip2.jpg",
-  "/images/otziv_na_prototip4.jpg",
-  "/images/otziv_na_prototip5.jpg",
-  "/images/otziv_na_prototip6.jpg",
+  "/images/otziv_na_prototip1.webp",
+  "/images/otziv_na_prototip2.webp",
+  "/images/otziv_na_prototip4.webp",
+  "/images/otziv_na_prototip5.webp",
+  "/images/otziv_na_prototip6.webp",
 ];
 
 const relatedCases = [
@@ -86,13 +86,13 @@ const relatedCases = [
     href: "/cases/prototype-renovation",
     title: "Прототип компании по ремонту квартир",
     result: "Переход из среднего сегмента в премиум",
-    image: "/images/prototip_website_neapol.png",
+    image: "/images/prototip_website_neapol.webp",
   },
   {
     href: "/cases/prototype-it-product",
     title: "Прототип сайта для IT-продукта",
     result: "Сложный продукт стал понятным",
-    image: "/images/prototip_saita_po_dlya_inansovogo_ucheta1.png",
+    image: "/images/prototip_saita_po_dlya_inansovogo_ucheta1.webp",
   },
 ];
 

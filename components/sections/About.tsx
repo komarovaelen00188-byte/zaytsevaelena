@@ -25,7 +25,7 @@ export function About() {
           <div className="relative">
             <div className="aspect-[4/5] rounded-3xl overflow-hidden border border-border bg-background flex items-center justify-center shadow-[0_0_0_1px_rgba(0,0,0,0.04)]">
               <img
-                src="/images/elena_zaytseva_conten_marketig_prototip.jpg"
+                src="/images/elena_zaytseva_conten_marketig_prototip.webp"
                 alt="Елена Зайцева"
                 className="w-full h-full object-cover"
               />

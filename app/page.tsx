@@ -37,7 +37,7 @@ export default function HomePage() {
             <div className="overflow-hidden rounded-[2rem] border border-border bg-card shadow-sm">
               <div className="aspect-[16/9] bg-secondary/30">
                 <img
-                  src="/images/prototip_website_bermuda.png"
+                  src="/images/prototip_website_bermuda.webp"
                   alt="Прототип сайта"
                   className="w-full h-full object-cover"
                 />
@@ -50,7 +50,7 @@ export default function HomePage() {
             <div className="overflow-hidden rounded-[2rem] border border-border bg-card shadow-sm">
               <div className="aspect-[16/9] bg-secondary/30">
                 <img
-                  src="/images/website_bermuda_prototip_elena_zaytseva.png"
+                  src="/images/website_bermuda_prototip_elena_zaytseva.webp"
                   alt="Готовый сайт"
                   className="w-full h-full object-cover"
                 />
