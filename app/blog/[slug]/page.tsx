@@ -30,6 +30,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: "article",
       publishedTime: post.publishedAt,
       url: `https://zaytsevaelena.ru/blog/${slug}`,
+      images: post.featuredImage ? [post.featuredImage] : undefined,
     },
   };
 }
@@ -54,6 +55,9 @@ export default async function BlogPostPage({ params }: Props) {
       "@type": "Person",
       name: "Елена Зайцева",
     },
+    ...(post.featuredImage
+      ? { image: `https://zaytsevaelena.ru${post.featuredImage}` }
+      : {}),
     url: `https://zaytsevaelena.ru/blog/${slug}`,
   };
 
@@ -96,6 +100,17 @@ export default async function BlogPostPage({ params }: Props) {
           <Calendar className="w-4 h-4" />
           {formatDate(post.publishedAt)}
         </div>
+
+        {/* Обложка */}
+        {post.featuredImage && (
+          <div className="overflow-hidden rounded-2xl border border-border mb-12">
+            <img
+              src={post.featuredImage}
+              alt={post.title}
+              className="w-full h-auto"
+            />
+          </div>
+        )}
 
         {/* Контент */}
         <div className="prose prose-neutral dark:prose-invert prose-headings:font-bold prose-headings:tracking-tight prose-a:text-primary prose-a:no-underline hover:prose-a:underline prose-code:text-primary max-w-none">
