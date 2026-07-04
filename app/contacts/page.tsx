@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
-import { Mail, MessageCircle, Send } from "lucide-react";
+import type { LucideIcon } from "lucide-react";
+import { Mail, MessageCircle, Send, Phone } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Контакты",
@@ -10,18 +11,34 @@ export const metadata: Metadata = {
   },
 };
 
-const contacts = [
+const contacts: {
+  icon: LucideIcon;
+  label: string;
+  value: string;
+  href?: string;
+}[] = [
+  {
+    icon: Phone,
+    label: "Телефон",
+    value: "+7 (923) 355-10-49",
+    href: "tel:+79233551049",
+  },
   {
     icon: Mail,
     label: "Email",
-    value: "hello@zaytsevaelena.ru",
-    href: "mailto:hello@zaytsevaelena.ru",
+    value: "Komarovaelen001@mail.ru",
+    href: "mailto:Komarovaelen001@mail.ru",
   },
   {
     icon: Send,
     label: "Telegram",
-    value: "@zaytsevaelena",
-    href: "https://t.me/zaytsevaelena",
+    value: "@zaytseva_elena_official",
+    href: "https://t.me/zaytseva_elena_official",
+  },
+  {
+    icon: MessageCircle,
+    label: "Макс",
+    value: "+7 (923) 355-10-49",
   },
 ];
 
@@ -44,12 +61,11 @@ export default function ContactsPage() {
         <div className="space-y-4 mb-12">
           {contacts.map((c) => {
             const Icon = c.icon;
-            return (
-              <a
-                key={c.label}
-                href={c.href}
-                className="flex items-center gap-4 p-5 rounded-2xl border border-border bg-card hover:border-primary/30 hover:bg-primary/5 transition-all group"
-              >
+            const cls =
+              "flex items-center gap-4 p-5 rounded-2xl border border-border bg-card transition-all group" +
+              (c.href ? " hover:border-primary/30 hover:bg-primary/5" : "");
+            const inner = (
+              <>
                 <div className="w-10 h-10 rounded-xl bg-primary/10 flex items-center justify-center flex-shrink-0">
                   <Icon className="w-5 h-5 text-primary" />
                 </div>
@@ -59,7 +75,16 @@ export default function ContactsPage() {
                     {c.value}
                   </div>
                 </div>
+              </>
+            );
+            return c.href ? (
+              <a key={c.label} href={c.href} className={cls}>
+                {inner}
               </a>
+            ) : (
+              <div key={c.label} className={cls}>
+                {inner}
+              </div>
             );
           })}
         </div>
