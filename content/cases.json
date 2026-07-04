@@ -46,5 +46,13 @@
     "category": "Прототип",
     "image": "/images/prototip_saita_po_dlya_inansovogo_ucheta1.webp",
     "slug": "prototype-it-product"
+  },
+  {
+    "id": "case-7",
+    "title": "Глубинное исследование ЦА бренда кухонной техники",
+    "description": "Кастдев-интервью купивших и не купивших: мотивы, возражения, аватары и язык клиента.",
+    "category": "Исследование ЦА",
+    "image": "/images/keis_issledovanie_CA_gril.webp",
+    "slug": "audience-research-grill"
   }
 ]
