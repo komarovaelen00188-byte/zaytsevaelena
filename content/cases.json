@@ -54,5 +54,13 @@
     "category": "Исследование ЦА",
     "image": "/images/keis_issledovanie_CA_gril.webp",
     "slug": "audience-research-grill"
+  },
+  {
+    "id": "case-8",
+    "title": "Опросы покупателей квартир для застройщика",
+    "description": "Почему купили и почему не купили: портреты, путь к сделке, роль риэлтора и карта конкурентов.",
+    "category": "Исследование ЦА",
+    "image": "/images/unikey_zastroyshik.webp",
+    "slug": "audience-research-developer"
   }
 ]
