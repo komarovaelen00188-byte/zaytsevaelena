@@ -62,5 +62,13 @@
     "category": "Исследование ЦА",
     "image": "/images/unikey_zastroyshik.webp",
     "slug": "audience-research-developer"
+  },
+  {
+    "id": "case-9",
+    "title": "UX-анализ сайта жилого комплекса",
+    "description": "Как повысить конверсию и сделать сайт продающим: аудит поведения и структура для перезапуска.",
+    "category": "UX-аудит",
+    "image": "/images/zarya_zhk_ux.webp",
+    "slug": "ux-audit-residential"
   }
 ]
